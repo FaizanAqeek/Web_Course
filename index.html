@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-bottom: 5px;
+    }
+
+    thead th {
+        border: 1px solid rgb(0, 0, 0);
+
+    }
+
+    tbody td {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+    }
+
+    #cat-list {
+        color: crimson
+    }
+
+    #dog-list {
+        color: dimgrey;
+    }
+
+    .animal-showcase {
+        border: 1px solid #000000ee;
+        margin: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <!-- //header -->
+    <div>
+        <h1>Header</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">Home</a> </li>
+                <li><a href="#">Product</a> </li>
+                <li><a href="#">Service</a> </li>
+                <li><a href="#">About</a> </li>
+            </ul>
+        </nav>
+
+    </div>
+    <!-- //middle section -->
+    <div>
+        <h2>Middle</h2>
+
+        <div style="background-color: burlywood;width: 700px;height: 900px;">
+            <label>First Name</label>
+            <input type="text" />
+            <label>Is Adult</label>
+            <input type="checkbox" />
+            <label>Gender</label>
+            <input type="radio" id="_male" name="gender" value="Male" title="male" />
+            <label for="_male">Male</label>
+            <input id="_female" type="radio" name="gender" value="Female" title="female" />
+            <label for="_male">Female</label><br />
+            <textarea>ABC Street House # 487 </textarea>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr#</th>
+                        <th>Html</th>
+                        <th>Css</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML is a markup language used to define a structure of a web page.</td>
+                        <td>CSS is a style sheet language used to style the web pages by using different styling
+                            features.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>It consists of tags inside which text is enclosed.</td>
+                        <td>It consists of selectors and declaration blocks.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="animal-showcase">
+                <ol id="cat-list">
+                    <li>wild cat</li>
+                    <li>persian cat</li>
+                    <li>normal cat</li>
+                </ol>
+            </div>
+            <div class="animal-showcase">
+                <ol id="dog-list">
+                    <li>dog</li>
+                    <li>bull dog</li>
+                    <li>german dog </li>
+                </ol>
+            </div>
+
+
+            <!-- Form -->
+            <form action="order.html" method="get">
+                <div>
+                    <label>username</label>
+                    <input required value="username"/>
+                </div>
+                <div>
+                    <label>password</label>
+                    <input type="password" />
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" required />
+                </div>
+                <div>
+                    <label>age</label>
+                    <input type="number" min="15" max="30" required value="18"/>
+                </div>
+
+                <div>
+                    <label>is Adult </label>
+                    <input type="checkbox" />
+                </div>
+
+                <div>
+                    <label>Birth Date </label>
+                    <input type="date" />
+                </div>
+
+                <div>
+                    <label>Gender </label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        
+                    </select>
+                </div>
+                <div>
+                    <label>Color</label>
+                    <input type="color" />
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <!-- Form -->
+
+
+        </div>
+    </div>
+    <!-- //footer -->
+    <div>
+        <h3>Footer</h3>
+
+        <div style="background-color: cadetblue;width: 800px;height: 200px;">
+
+
+        </div>
+    </div>
+</body>
+
+</html>
